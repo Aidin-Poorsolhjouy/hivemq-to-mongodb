@@ -17,6 +17,8 @@ MONGO_URI = os.environ.get("MONGO_URI")
 DB_NAME = os.environ.get("DB_NAME")
 COLLECTION_NAME = os.environ.get("COLLECTION_NAME")
 
+print("DB_NAME =", DB_NAME)
+
 # --- MongoDB client ---
 mongo_client = MongoClient(MONGO_URI)
 db = mongo_client[DB_NAME]
