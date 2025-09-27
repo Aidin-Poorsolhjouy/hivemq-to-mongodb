@@ -8,7 +8,7 @@ from zoneinfo import ZoneInfo
 import os
 
 MQTT_BROKER = os.environ.get("MQTT_BROKER")
-MQTT_PORT = os.environ.get("MQTT_PORT")
+MQTT_PORT = 8883
 MQTT_USER = os.environ.get("MQTT_USER")
 MQTT_PASS = os.environ.get("MQTT_PASS")
 MQTT_TOPIC = os.environ.get("MQTT_TOPIC")
@@ -17,7 +17,6 @@ MONGO_URI = os.environ.get("MONGO_URI")
 DB_NAME = os.environ.get("DB_NAME")
 COLLECTION_NAME = os.environ.get("COLLECTION_NAME")
 
-print("DB_NAME =", DB_NAME)
 
 # --- MongoDB client ---
 mongo_client = MongoClient(MONGO_URI)
