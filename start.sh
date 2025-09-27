@@ -3,4 +3,4 @@
 pip install -r requirements.txt
 
 # Run the Python service
-python service.py
+python main.py
